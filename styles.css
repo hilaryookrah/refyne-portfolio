@@ -200,3 +200,13 @@ html.lb-open{overflow:hidden}
 .wscreen::before{content:"";position:absolute;inset:0;background:rgba(7,43,54,.25);pointer-events:none}
 .wscreen.live::before{display:none}
 .wide .yt{display:inline-block;margin-top:.75rem;font-size:.95rem}
+
+/* short-form video phones */
+.phones.four{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.phones.four .phone{width:100%}
+.phone.reel .screen{background:linear-gradient(160deg,#2E9E8F,#0F3D4C)}
+.phone.reel:nth-child(even) .screen{background:linear-gradient(160deg,#1B5567,#0F3D4C)}
+.phone figcaption strong{display:block;font-weight:500;font-size:1.05rem;margin-bottom:.15rem}
+@media (max-width:1000px) and (min-width:701px){.phones.four{grid-template-columns:repeat(2,1fr);max-width:36rem;margin-inline:auto}}
+@media (max-width:700px){.phones.four{display:flex}}
+.phone .tag{white-space:nowrap}

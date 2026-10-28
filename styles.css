@@ -193,3 +193,10 @@ button.tile.thumb{border:0;width:100%;text-align:left;cursor:pointer;font-family
 .lb-close{position:absolute;top:calc(env(safe-area-inset-top,0px) + 1rem);right:1rem;width:46px;height:46px;border-radius:50%;border:0;background:var(--mint);color:var(--teal);font:500 1.7rem/1 var(--body);cursor:pointer}
 .lb-close:hover{background:var(--pale)}
 html.lb-open{overflow:hidden}
+
+/* landscape recap video */
+.wide{max-width:52rem}
+.wscreen{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:url(https://i.ytimg.com/vi/S5489oZbiqk/maxresdefault.jpg) center/cover,linear-gradient(160deg,#2E9E8F,#0F3D4C)}
+.wscreen::before{content:"";position:absolute;inset:0;background:rgba(7,43,54,.25);pointer-events:none}
+.wscreen.live::before{display:none}
+.wide .yt{display:inline-block;margin-top:.75rem;font-size:.95rem}

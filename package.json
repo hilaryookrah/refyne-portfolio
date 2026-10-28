@@ -1,0 +1,9 @@
+{
+  "name": "refyne-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "REFYNE portfolio by Hilary Osei-Okrah. A static site: plain HTML, CSS and JavaScript.",
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}

@@ -304,3 +304,26 @@ section{padding:clamp(2.25rem,5vw,3.5rem) 0}
 .ba-caption mark{background:none}
 .value h2{font-size:clamp(1.4rem,3vw,2.1rem)}
 .hero-copy .lead{max-width:34rem}
+
+/* services accordion */
+.services h2{font-size:var(--fs-h2);line-height:1.1;text-transform:none;margin-bottom:1.5rem}
+.services h2::after{content:"";display:block;width:4.5rem;height:6px;border-radius:3px;background:var(--mint);margin-top:1rem}
+.svc{background:var(--panel);border-radius:18px;margin:0 0 .9rem;max-width:56rem}
+.svc summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:1rem;padding:1.15rem 1.35rem;border-radius:18px}
+.svc summary::-webkit-details-marker{display:none}
+.svc summary:focus-visible{outline:3px solid var(--mint);outline-offset:-3px}
+.svc .num{font:700 1.3rem/1 var(--display);letter-spacing:-.06em;min-width:2.2rem}
+.svc h3{flex:1;margin:0;font-size:clamp(1.05rem,2.2vw,1.35rem)}
+.svc .plus{position:relative;flex:none;width:36px;height:36px;border-radius:50%;background:var(--mint);transition:transform .25s}
+.svc summary:hover .plus{transform:scale(1.1)}
+.svc .plus::before,.svc .plus::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:2.5px;margin:-1.25px 0 0 -7px;border-radius:2px;background:var(--teal);transition:transform .3s}
+.svc .plus::after{transform:rotate(90deg)}
+.svc[open] .plus::after{transform:rotate(0)}
+.svc ul{list-style:none;margin:0;padding:.25rem 1.35rem 1.4rem 4.55rem;display:grid;grid-template-columns:repeat(2,1fr);gap:.6rem 2rem}
+.svc li{position:relative;padding-left:1.35rem}
+.svc li::before{content:"";position:absolute;left:0;top:.5em;border-left:8px solid var(--accent);border-top:5px solid transparent;border-bottom:5px solid transparent}
+.svc[open] ul{animation:svcIn .35s ease}
+@keyframes svcIn{from{opacity:0;transform:translateY(-6px)}}
+nav ul{flex-wrap:wrap;row-gap:.4rem}
+@media (max-width:700px){.svc ul{grid-template-columns:1fr;padding-left:1.35rem}.svc summary{padding:1rem}nav ul{gap:.75rem;font-size:.9rem}}
+@media (prefers-reduced-motion:reduce){.svc[open] ul{animation:none}.svc .plus,.svc .plus::before,.svc .plus::after{transition:none}}

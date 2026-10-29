@@ -210,3 +210,21 @@ html.lb-open{overflow:hidden}
 @media (max-width:1000px) and (min-width:701px){.phones.four{grid-template-columns:repeat(2,1fr);max-width:36rem;margin-inline:auto}}
 @media (max-width:700px){.phones.four{display:flex}}
 .phone .tag{white-space:nowrap}
+
+/* revisions: hero works, thumbnails on phones, spacing */
+.phone .screen::before{content:"";position:absolute;inset:0;background:rgba(7,43,54,.22);pointer-events:none}
+.phone .screen.live::before{display:none}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+.hero-copy .lead{max-width:30rem}
+.hero-phones{display:flex;justify-content:center;gap:1.25rem;margin-top:3rem}
+.hero-phones .phone{width:min(46%,215px);margin:0;animation:bob 7s ease-in-out infinite alternate}
+.hero-phones .hp2{margin-top:3.5rem;animation-delay:-3s}
+@keyframes bob{to{transform:translateY(-12px)}}
+.value h2{text-transform:none;max-width:24ch}
+#work{padding-bottom:3rem}
+#work .wrap>.cat:last-of-type{margin-bottom:0}
+.value{padding-top:2.5rem}
+@media (max-width:700px){.hero-grid{grid-template-columns:1fr}.hero-phones{margin-top:2rem}.hero-phones .phone{width:44%;flex:0 0 44%}}
+@media (prefers-reduced-motion:reduce){.hero-phones .phone{animation:none}}
+.navcta{white-space:nowrap}
+@media (max-width:700px){nav ul{gap:1rem;font-size:.95rem}.navcta{padding:.45rem .9rem}}

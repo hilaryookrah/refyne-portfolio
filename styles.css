@@ -2,12 +2,8 @@
   --mist:#EAF2F1; --teal:#0F3D4C; --pale:#CFE7E4; --mint:#7FD1C7; --deep:#2E9E8F;
   --paper:#EAF2F1; --ink:#0F3D4C; --panel:#CFE7E4; --accent:#2E9E8F;
   --display:'Unbounded','Arial Black',Arial,sans-serif; --body:'Outfit',system-ui,sans-serif;
-  color-scheme:light dark;
+  color-scheme:light;
 }
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--paper:#0B2F3B;--ink:#EAF2F1;--panel:#0F3D4C;--accent:#7FD1C7}
-}
-:root[data-theme="dark"]{--paper:#0B2F3B;--ink:#EAF2F1;--panel:#0F3D4C;--accent:#7FD1C7}
 *{box-sizing:border-box;margin:0}
 html{scroll-behavior:smooth;height:100%}
 :root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -327,3 +323,11 @@ section{padding:clamp(2.25rem,5vw,3.5rem) 0}
 nav ul{flex-wrap:wrap;row-gap:.4rem}
 @media (max-width:700px){.svc ul{grid-template-columns:1fr;padding-left:1.35rem}.svc summary{padding:1rem}nav ul{gap:.75rem;font-size:.9rem}}
 @media (prefers-reduced-motion:reduce){.svc[open] ul{animation:none}.svc .plus,.svc .plus::before,.svc .plus::after{transition:none}}
+
+/* round 8: services type sizes */
+.services h2{font-size:clamp(1.4rem,3vw,2.1rem)}
+.svc .num{font-size:1.05rem;min-width:2rem}
+.svc h3{font-size:clamp(.95rem,1.8vw,1.1rem)}
+.svc ul{font-size:.95rem}
+.svc ul{padding-left:4.2rem}
+@media (max-width:700px){.svc ul{padding-left:1.35rem}}

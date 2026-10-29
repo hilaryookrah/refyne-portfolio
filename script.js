@@ -25,6 +25,7 @@
   function closeLb(){box.hidden=true;document.documentElement.classList.remove('lb-open');lbImg.removeAttribute('src');if(lastBtn)lastBtn.focus()}
   document.addEventListener('click',function(e){var t=e.target.closest('.thumb');if(t){if(e.metaKey||e.ctrlKey||e.shiftKey||e.button){return}e.preventDefault();openLb(t);return}if(!box.hidden&&!e.target.closest('img'))closeLb()});
   document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!box.hidden)closeLb()});
+  document.querySelectorAll('.svc').forEach(function(d){d.addEventListener('toggle',function(){if(d.open)document.querySelectorAll('.svc[open]').forEach(function(x){if(x!==d)x.removeAttribute('open')})})});
   if(rm)return;
   var h=document.querySelector('.hero h1');
   h.innerHTML=h.textContent.split(' ').map(function(w,i){return '<span class="w"><span style="--i:'+i+'">'+w+'</span></span>'}).join(' ');

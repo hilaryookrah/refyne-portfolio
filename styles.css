@@ -271,3 +271,13 @@ section{padding:clamp(2.25rem,5vw,3.5rem) 0}
 .sub{margin-bottom:1.5rem}
 .marquee{padding:.9rem 0}
 @media (max-width:700px){.cmp{grid-template-columns:1fr;gap:1rem}.cmp .phone.ref{margin-top:0}.cmp .phone{width:auto}.hero h1{margin-top:2rem}}
+
+/* round 4: gradient divider, headings */
+.hero{border-radius:0;padding-bottom:5rem}
+.hero .fade{position:absolute;left:0;right:0;bottom:0;height:5rem;background:linear-gradient(to bottom,transparent,var(--paper));pointer-events:none;z-index:0}
+#work h2{font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.02}
+#work h2 .y{color:var(--accent)}
+#work h2::after{content:"";display:block;width:4.5rem;height:6px;border-radius:3px;background:var(--mint);margin-top:1rem}
+.cmp .ba-copy h3{font-size:clamp(1.5rem,3.1vw,2.3rem);line-height:1.2;letter-spacing:-.05em;margin:0}
+.cmp .ba-copy h3 span{display:block}
+.process h2{margin-bottom:1.5rem}

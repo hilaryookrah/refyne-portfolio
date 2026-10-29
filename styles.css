@@ -331,3 +331,20 @@ nav ul{flex-wrap:wrap;row-gap:.4rem}
 .svc ul{font-size:.95rem}
 .svc ul{padding-left:4.2rem}
 @media (max-width:700px){.svc ul{padding-left:1.35rem}}
+
+/* proof strip */
+.proof{padding:clamp(1.5rem,3vw,2.25rem) 0 0}
+.stats{list-style:none;margin:0;padding:0;display:flex;justify-content:center;gap:clamp(2rem,8vw,5rem);text-align:center}
+.stats strong{display:block;font:700 clamp(1.8rem,3.6vw,2.6rem)/1 var(--display);letter-spacing:-.06em}
+.stats span{display:block;margin-top:.45rem;font-size:1rem;opacity:.85}
+.logos{list-style:none;margin:1.75rem 0 0;padding:0;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:1rem}
+.logos li{background:#fff;border-radius:18px;height:96px;padding:0 1.25rem;display:flex;align-items:center;justify-content:center}
+.logos img{display:block;height:72px;width:auto;max-width:150px;object-fit:contain}
+.proof-label{text-align:center;margin:.9rem 0 0;font-size:.95rem;opacity:.8}
+@media (max-width:700px){.logos li{height:80px;padding:0 1rem}.logos img{height:58px}}
+
+/* round 9: proof moved */
+.proof{padding:.5rem 0 clamp(2.25rem,5vw,3.5rem)}
+.proof .logos{margin-top:0}
+.about .stats{justify-content:flex-start;text-align:left;gap:clamp(1.5rem,5vw,3rem);margin:1.5rem 0 0}
+.about .stats strong{font-size:clamp(1.6rem,3vw,2.2rem)}

@@ -299,3 +299,8 @@ section{padding:clamp(2.25rem,5vw,3.5rem) 0}
 .hero-grid{padding-top:1.5rem}
 .hero .fade{height:7.5rem;background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--paper) 30%,transparent) 45%,color-mix(in srgb,var(--paper) 75%,transparent) 78%,var(--paper))}
 @media (min-width:701px){.hero-phones .phone{width:min(46%,235px)}}
+
+/* round 6 */
+.ba-caption mark{background:none}
+.value h2{font-size:clamp(1.4rem,3vw,2.1rem)}
+.hero-copy .lead{max-width:34rem}

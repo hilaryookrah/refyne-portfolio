@@ -281,3 +281,21 @@ section{padding:clamp(2.25rem,5vw,3.5rem) 0}
 .cmp .ba-copy h3{font-size:clamp(1.5rem,3.1vw,2.3rem);line-height:1.2;letter-spacing:-.05em;margin:0}
 .cmp .ba-copy h3 span{display:block}
 .process h2{margin-bottom:1.5rem}
+
+/* round 5: one type scale, lighter divider, bigger hero */
+:root{--fs-display:clamp(2.1rem,5.6vw,4rem);--fs-h2:clamp(1.9rem,4.2vw,3rem);--fs-h3:clamp(1.15rem,2vw,1.4rem);--fs-lede:1.2rem}
+.hero h1{font-size:var(--fs-display);margin:2.5rem 0 1rem}
+#work h2,.about h2,.value h2,.process h2,.contact h2{font-size:var(--fs-h2);line-height:1.1;text-transform:none}
+.value h2,.process h2{margin-bottom:1rem}
+.value h2::after,.process h2::after{content:"";display:block;width:4.5rem;height:6px;border-radius:3px;background:var(--mint);margin-top:1rem}
+.cat h3{font-size:var(--fs-h3)}
+.steps h3,.gets h3{font-size:1.1rem;text-transform:none;letter-spacing:-.04em}
+.statement{font-size:clamp(1.25rem,2.6vw,1.7rem)}
+.about .kicker{font-size:var(--fs-lede)}
+.ba-caption{font:400 clamp(1.25rem,2.3vw,1.7rem)/1.45 var(--body);color:var(--ink);max-width:22rem;margin:0}
+.ba-caption span{display:block}
+.ba-caption mark{background:linear-gradient(transparent 62%,rgba(127,209,199,.65) 62%);color:var(--ink);font-weight:600;padding:0 .1em}
+.hero{padding-bottom:7.5rem}
+.hero-grid{padding-top:1.5rem}
+.hero .fade{height:7.5rem;background:linear-gradient(to bottom,transparent,color-mix(in srgb,var(--paper) 30%,transparent) 45%,color-mix(in srgb,var(--paper) 75%,transparent) 78%,var(--paper))}
+@media (min-width:701px){.hero-phones .phone{width:min(46%,235px)}}

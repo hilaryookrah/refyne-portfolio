@@ -239,3 +239,35 @@ html.lb-open{overflow:hidden}
 .tools{list-style:none;padding:0;margin:1.75rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
 .tools li{padding:.35rem .9rem;border-radius:999px;border:2px solid var(--accent);font-weight:500}
 .tools .label{border:0;padding:0;margin-right:.25rem;opacity:.8}
+
+/* round 3: layout, spacing, transition */
+.cmp{display:grid;grid-template-columns:1fr 1.15fr;gap:2rem;align-items:center}
+.cmp .ba-copy h3{display:block;font-size:clamp(1.9rem,4.5vw,3.2rem);line-height:1.05;margin-bottom:1rem}
+.cmp .ba-copy h3::before{display:none}
+.cmp .ba-copy p{max-width:20rem;opacity:.85;margin:0}
+.cmp .phones{margin-top:0;padding-top:1.75rem;gap:1.5rem}
+.cmp .phone{width:min(46%,250px)}
+.cmp .phone.ref{margin-top:-1.75rem}
+.tile.thumb::before{display:block;content:"View";top:.75rem;left:auto;right:.75rem;width:auto;height:auto;margin:0;border:0;border-radius:999px;padding:.2rem .75rem;background:var(--mint);color:var(--teal);font-size:.85rem;font-weight:500;filter:none;z-index:2}
+.tile.thumb:hover::before{transform:none;background:var(--pale)}
+.contact .duo{grid-template-columns:1fr;justify-items:center;text-align:center}
+.contact .copy{max-width:34rem}
+.contact h2,.contact p{margin-left:auto;margin-right:auto;max-width:none}
+.cta-row{justify-content:center}
+.hero{border-radius:0 0 50% 50%/0 0 clamp(2rem,5vw,4.5rem) clamp(2rem,5vw,4.5rem);padding-bottom:3.5rem}
+.scallop{display:none}
+section{padding:clamp(2.25rem,5vw,3.5rem) 0}
+#work{padding-top:clamp(2.75rem,5vw,4rem);padding-bottom:1.5rem}
+#work h2{margin-bottom:1.5rem}
+.value{padding-top:1.5rem}
+.cat{margin-bottom:2.25rem}
+.hero h1{margin:2.5rem 0 1rem}
+.hero-phones{margin-top:1.5rem}
+.hero .row{margin-top:1.5rem}
+.gets{margin-top:1.5rem;gap:1.5rem 2.5rem}
+.fit{margin-top:1.5rem}
+.value .btn{margin-top:1rem}
+.about .wrap{gap:2.5rem}
+.sub{margin-bottom:1.5rem}
+.marquee{padding:.9rem 0}
+@media (max-width:700px){.cmp{grid-template-columns:1fr;gap:1rem}.cmp .phone.ref{margin-top:0}.cmp .phone{width:auto}.hero h1{margin-top:2rem}}

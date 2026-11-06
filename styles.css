@@ -348,3 +348,12 @@ nav ul{flex-wrap:wrap;row-gap:.4rem}
 .proof .logos{margin-top:0}
 .about .stats{justify-content:flex-start;text-align:left;gap:clamp(1.5rem,5vw,3rem);margin:1.5rem 0 0}
 .about .stats strong{font-size:clamp(1.6rem,3vw,2.2rem)}
+
+/* larger hero phones */
+.hero-grid{grid-template-columns:1fr 1.2fr}
+@media (min-width:701px){.hero-phones{gap:1.5rem}.hero-phones .phone{width:min(48%,310px)}.hero-phones .hp2{margin-top:4rem}}
+@media (max-width:700px){.hero-phones{gap:.75rem}.hero-phones .phone{width:48%;flex:0 0 48%}}
+@media (max-width:700px){.hero-grid{grid-template-columns:1fr}}
+.hero-grid{grid-template-columns:.8fr 1.4fr}
+@media (min-width:701px){.hero-phones .phone{width:min(49%,340px)}}
+@media (max-width:700px){.hero-grid{grid-template-columns:1fr}}
